@@ -1,0 +1,58 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  height: 100vh;
+  padding: 3rem;
+}
+
+.btn {
+  font-size: 2rem;
+  background-color: orangered;
+  border: none;
+  outline: none;
+  padding: 1.25rem 2rem;
+  border-radius: 3px;
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.model {
+  width: 300px;
+  height: 300px;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: #ccc;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

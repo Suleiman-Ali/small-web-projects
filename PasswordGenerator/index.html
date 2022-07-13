@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Password Will Appear Here..</h1>
+    <form class="form" id="form">
+      <div class="label-box">
+        <input type="range" id="range" min="10" max="50" />
+        <input type="text" id="number" />
+      </div>
+
+      <div class="label-box">
+        <label for="upper" class="label">Include Upper</label>
+        <input type="checkbox" id="upper" />
+      </div>
+
+      <div class="label-box">
+        <label for="numbers" class="label">Include Numbers</label>
+        <input type="checkbox" id="numbers" />
+      </div>
+
+      <div class="label-box">
+        <label for="symbols" class="label">Include Symbols</label>
+        <input type="checkbox" id="symbols" />
+      </div>
+
+      <button type="submit" id="submit">Generate Password</button>
+    </form>
+  </body>
+</html>

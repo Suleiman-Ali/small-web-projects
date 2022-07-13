@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.music-player {
+  padding: 3rem;
+  width: 35rem;
+  height: 45rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 3rem 3rem rgba(#000, 0.1);
+  &__img {
+    width: 17.5rem;
+    clip-path: circle();
+  }
+  &__name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  &__owner {
+    font-size: 1.75rem;
+    color: #333;
+  }
+  &__time-line {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .time {
+      display: flex;
+      justify-content: space-between;
+      &__text {
+        font-size: 1.75rem;
+      }
+    }
+    .progress-bar {
+      height: 5px;
+      background-color: #ccc;
+      border-radius: 2px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+
+      .progress {
+        height: 100%;
+        border-radius: 2px;
+        background-color: rebeccapurple;
+        width: 0;
+        cursor: pointer;
+        transition: all 0.1s;
+      }
+    }
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    .btn {
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: #ccc;
+      transition: all 0.1s;
+
+      &:hover,
+      &:active {
+        color: #333;
+      }
+    }
+  }
+}

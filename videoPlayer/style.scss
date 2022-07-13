@@ -1,0 +1,148 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.full-screen {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.video {
+  width: 100%;
+}
+
+.controls {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  z-index: 2147483648;
+  transition: all 0.25s;
+  opacity: 0;
+}
+
+.play {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  width: 5%;
+}
+
+.pause {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  width: 5%;
+}
+
+.current-time {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.bar {
+  width: 60%;
+  height: 1.5rem;
+  background-color: #54575a;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+
+  &:hover {
+    cursor: row-resize;
+  }
+
+  &__movement {
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: width 0.15s 0s linear;
+
+    &:hover {
+      cursor: row-resize;
+    }
+  }
+
+  &--small {
+    width: 15%;
+    height: 1rem;
+    background-color: #54575a;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+
+    &:hover {
+      cursor: row-resize;
+    }
+
+    &__movement {
+      width: 0;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 2px;
+      transition: width 0.15s 0s linear;
+
+      &:hover {
+        cursor: row-resize;
+      }
+    }
+  }
+}
+
+.final-time {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.volume-true {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.volume-false {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}

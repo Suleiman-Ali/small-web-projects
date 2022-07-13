@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Book Keper</title>
+  </head>
+  <body>
+    <div class="model hidden">
+      <div class="model__heading-box">
+        <p class="model__text">Add Bookmark</p>
+        <i class="fas fa-times model__close"></i>
+      </div>
+      <div class="model__bottom-box">
+        <div class="model__form-box">
+          <label for="name" class="model__label">Website Name</label>
+          <input type="text" class="model__input" id="name" />
+        </div>
+        <div class="model__form-box">
+          <label for="url" class="model__label">Website URL</label>
+          <input type="text" class="model__input" id="url" />
+        </div>
+        <button class="model__save">Save</button>
+      </div>
+    </div>
+
+    <h1 class="heading">Add Bookmark</h1>
+    <div class="containers"></div>
+  </body>
+</html>

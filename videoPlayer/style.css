@@ -1,0 +1,173 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.full-screen {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.video {
+  width: 100%;
+}
+
+.controls {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 5rem;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  z-index: 2147483648;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  opacity: 0;
+}
+
+.play {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  width: 5%;
+}
+
+.pause {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  width: 5%;
+}
+
+.current-time {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.bar {
+  width: 60%;
+  height: 1.5rem;
+  background-color: #54575a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+}
+
+.bar:hover {
+  cursor: row-resize;
+}
+
+.bar__movement {
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-transition: width 0.15s 0s linear;
+  transition: width 0.15s 0s linear;
+}
+
+.bar__movement:hover {
+  cursor: row-resize;
+}
+
+.bar--small {
+  width: 15%;
+  height: 1rem;
+  background-color: #54575a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+}
+
+.bar--small:hover {
+  cursor: row-resize;
+}
+
+.bar--small__movement {
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-transition: width 0.15s 0s linear;
+  transition: width 0.15s 0s linear;
+}
+
+.bar--small__movement:hover {
+  cursor: row-resize;
+}
+
+.final-time {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.volume-true {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.volume-false {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */

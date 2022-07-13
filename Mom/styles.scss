@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+$slices: 64;
+$slide-amount: 15%;
+$animation-duration: 1000ms;
+
+body {
+  background-color: #f2789f;
+  font-family: 'Lemonada', cursive;
+}
+
+h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  transform: translateX(25px) translateY(10px);
+
+  @media screen and (max-width: 400px) {
+    font-size: 16px;
+    transform: translateX(10px) translateY(10px);
+  }
+}
+
+.app {
+  position: absolute;
+  width: 100%;
+  max-width: 280px;
+  height: 75%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #fff;
+  border-style: dotted;
+  padding: 0.5rem;
+  border-radius: 3px;
+  background-color: transparent;
+
+  @media screen and (min-width: 400px) {
+    max-width: 370px;
+  }
+}
+
+.image {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  width: 100%;
+  max-width: 375px;
+  height: 75%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) perspective(75em) rotateX(10deg);
+  transition: opacity ease-in-out $animation-duration;
+
+  @media screen and (max-width: 400px) {
+    max-width: 300px;
+  }
+
+  div {
+    width: 100%;
+    height: 100% / $slices;
+
+    background-size: auto (100% * $slices);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+
+    animation-duration: $animation-duration;
+    animation-timing-function: ease-out;
+
+    @for $i from 1 through $slices {
+      &:nth-child(#{$i}) {
+        background-position-y: (100% / $slices) * ($i - 1);
+      }
+    }
+  }
+
+  &.animate-in div {
+    &:nth-child(odd) {
+      animation-name: in-left;
+    }
+    &:nth-child(even) {
+      animation-name: in-right;
+    }
+  }
+
+  &.animate-out div {
+    &:nth-child(odd) {
+      animation-name: out-right;
+    }
+    &:nth-child(even) {
+      animation-name: out-left;
+    }
+  }
+}
+
+@keyframes in-left {
+  0% {
+    background-position-x: (50% + $slide-amount);
+  }
+  100% {
+    background-position-x: 50%;
+  }
+}
+
+@keyframes in-right {
+  0% {
+    background-position-x: (50% - $slide-amount);
+  }
+  100% {
+    background-position-x: 50%;
+  }
+}
+
+@keyframes out-right {
+  0% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: (50% + $slide-amount);
+  }
+}
+
+@keyframes out-left {
+  0% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: (50% - $slide-amount);
+  }
+}

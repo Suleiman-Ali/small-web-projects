@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+:root {
+  --primary: #c70039;
+  --secondary: #ff1e56;
+  --black: #343c44;
+  --white: rgb(240, 239, 239);
+  --grey: #d8d2d2;
+  --gradint: linear-gradient(to bottom right, #ff1e56, #c70039);
+  --font-header: "Acme", sans-serif;
+  --font-body: "Josefin Sans", sans-serif;
+  --font-size-header: 6rem;
+  --font-size-headings: 4rem;
+  --font-size-texts: 3rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gradint);
+  font-family: var(--font-body);
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem 1fr;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 7.5rem;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgba(#000, 0.15);
+  border-bottom-left-radius: 25px;
+  box-shadow: 0 0 3rem 3rem rgba(#000, 0.15);
+  padding-top: 1rem;
+}
+
+.btn {
+  font-size: 10rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--secondary);
+  cursor: pointer;
+  font-family: inherit;
+  opacity: 0.75;
+}
+
+.img {
+  width: 10rem;
+  cursor: pointer;
+}
+
+.heading {
+  font-family: var(--font-header);
+  font-size: var(--font-size-header);
+  color: var(--white);
+  letter-spacing: 3px;
+  margin-top: 7.5rem;
+  animation: move-in 2s ease forwards;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5rem;
+  width: 850px;
+  height: 500px;
+  background-color: var(--gradint);
+  border-radius: 10px;
+  box-shadow: 0 0 3rem 5rem rgba(#000, 0.075);
+  border: 2.5px solid var(--grey);
+  padding: 5rem;
+  transition: all 2.5s cubic-bezier(0, 1.06, 0.88, 1.23);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+}
+.none {
+  display: none;
+}
+
+.section--questions {
+  &__heading {
+    font-size: var(--font-size-headings);
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--font-header);
+    letter-spacing: 1px;
+  }
+
+  .list {
+    font-size: var(--font-size-texts);
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.section--web {
+  &--html {
+    width: 500px;
+    height: 400px;
+  }
+
+  &--css {
+    width: 500px;
+    height: 400px;
+  }
+
+  &--js {
+    width: 600px;
+    height: 450px;
+  }
+
+  &--frame {
+    width: 750px;
+    height: 400px;
+  }
+
+  &--git {
+    width: 700px;
+    height: 500px;
+  }
+
+  .heading-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__heading {
+      font-size: var(--font-size-headings);
+      color: var(--white);
+      font-family: var(--font-header);
+      letter-spacing: 1px;
+    }
+
+    &__icon {
+      background-color: var(--white);
+      padding: 0.5rem;
+      width: 10rem;
+      border-radius: 5px;
+    }
+  }
+
+  &__text {
+    font-size: var(--font-size-texts);
+    color: var(--grey);
+  }
+}
+
+::selection {
+  background: var(--gradint);
+  color: var(--white);
+}
+
+@keyframes move-in {
+  0% {
+    transform: translateY(-200px);
+  }
+  50% {
+    transform: translateY(100px);
+    letter-spacing: 8px;
+  }
+
+  75% {
+    transform: translateY(-25px);
+    letter-spacing: 5px;
+  }
+
+  100% {
+    transform: translateY(0);
+    letter-spacing: 2px;
+  }
+}

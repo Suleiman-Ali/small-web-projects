@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card" style="width: 18rem">
+      <img src="./download.jfif" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./download.jfif" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./download.jfif" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./download.jfif" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./download.jfif" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./download.jfif" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img src="./download.jfif" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <script>
+      let divs = [...document.querySelectorAll("div")];
+      divs = divs.filter((div) => div.classList.contains("card"));
+
+      // NOTE Intersection observer way
+      // let options = {
+      //   root: null,
+      //   rootMargin: "0px",
+      //   threshold: 0.5,
+      // };
+
+      // let observer = new IntersectionObserver(function (entries, observer) {
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) entry.target.classList.add("active");
+      //     else entry.target.classList.remove("active");
+      //   });
+      // }, options);
+
+      // divs.forEach((div) => {
+      //   observer.observe(div);
+      // });
+
+      // NOTE without Intersection observer way
+
+      // window.addEventListener("scroll", function (e) {
+      //   scrrenPosition = window.innerHeight;
+
+      //   divs.forEach((div) => {
+      //     if (
+      //       div.getBoundingClientRect().top <= scrrenPosition / 1.5 &&
+      //       div.getBoundingClientRect().top >= -200
+      //     ) {
+      //       div.classList.add("active");
+      //     } else {
+      //       div.classList.remove("active");
+      //     }
+      //   });
+      // });
+    </script>
+  </body>
+</html>

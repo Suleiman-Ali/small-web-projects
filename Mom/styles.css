@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap");
+body {
+  background-color: #f2789f;
+  font-family: 'Lemonada', cursive;
+}
+
+h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-transform: translateX(25px) translateY(10px);
+          transform: translateX(25px) translateY(10px);
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 16px;
+    -webkit-transform: translateX(10px) translateY(10px);
+            transform: translateX(10px) translateY(10px);
+  }
+}
+
+.app {
+  position: absolute;
+  width: 100%;
+  max-width: 280px;
+  height: 75%;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 4px solid #fff;
+  border-style: dotted;
+  padding: 0.5rem;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 400px) {
+  .app {
+    max-width: 370px;
+  }
+}
+
+.image {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: absolute;
+  width: 100%;
+  max-width: 375px;
+  height: 75%;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) perspective(75em) rotateX(10deg);
+          transform: translate(-50%, -50%) perspective(75em) rotateX(10deg);
+  -webkit-transition: opacity ease-in-out 1000ms;
+  transition: opacity ease-in-out 1000ms;
+}
+
+@media screen and (max-width: 400px) {
+  .image {
+    max-width: 300px;
+  }
+}
+
+.image div {
+  width: 100%;
+  height: 1.5625%;
+  background-size: auto 6400%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.image div:nth-child(1) {
+  background-position-y: 0%;
+}
+
+.image div:nth-child(2) {
+  background-position-y: 1.5625%;
+}
+
+.image div:nth-child(3) {
+  background-position-y: 3.125%;
+}
+
+.image div:nth-child(4) {
+  background-position-y: 4.6875%;
+}
+
+.image div:nth-child(5) {
+  background-position-y: 6.25%;
+}
+
+.image div:nth-child(6) {
+  background-position-y: 7.8125%;
+}
+
+.image div:nth-child(7) {
+  background-position-y: 9.375%;
+}
+
+.image div:nth-child(8) {
+  background-position-y: 10.9375%;
+}
+
+.image div:nth-child(9) {
+  background-position-y: 12.5%;
+}
+
+.image div:nth-child(10) {
+  background-position-y: 14.0625%;
+}
+
+.image div:nth-child(11) {
+  background-position-y: 15.625%;
+}
+
+.image div:nth-child(12) {
+  background-position-y: 17.1875%;
+}
+
+.image div:nth-child(13) {
+  background-position-y: 18.75%;
+}
+
+.image div:nth-child(14) {
+  background-position-y: 20.3125%;
+}
+
+.image div:nth-child(15) {
+  background-position-y: 21.875%;
+}
+
+.image div:nth-child(16) {
+  background-position-y: 23.4375%;
+}
+
+.image div:nth-child(17) {
+  background-position-y: 25%;
+}
+
+.image div:nth-child(18) {
+  background-position-y: 26.5625%;
+}
+
+.image div:nth-child(19) {
+  background-position-y: 28.125%;
+}
+
+.image div:nth-child(20) {
+  background-position-y: 29.6875%;
+}
+
+.image div:nth-child(21) {
+  background-position-y: 31.25%;
+}
+
+.image div:nth-child(22) {
+  background-position-y: 32.8125%;
+}
+
+.image div:nth-child(23) {
+  background-position-y: 34.375%;
+}
+
+.image div:nth-child(24) {
+  background-position-y: 35.9375%;
+}
+
+.image div:nth-child(25) {
+  background-position-y: 37.5%;
+}
+
+.image div:nth-child(26) {
+  background-position-y: 39.0625%;
+}
+
+.image div:nth-child(27) {
+  background-position-y: 40.625%;
+}
+
+.image div:nth-child(28) {
+  background-position-y: 42.1875%;
+}
+
+.image div:nth-child(29) {
+  background-position-y: 43.75%;
+}
+
+.image div:nth-child(30) {
+  background-position-y: 45.3125%;
+}
+
+.image div:nth-child(31) {
+  background-position-y: 46.875%;
+}
+
+.image div:nth-child(32) {
+  background-position-y: 48.4375%;
+}
+
+.image div:nth-child(33) {
+  background-position-y: 50%;
+}
+
+.image div:nth-child(34) {
+  background-position-y: 51.5625%;
+}
+
+.image div:nth-child(35) {
+  background-position-y: 53.125%;
+}
+
+.image div:nth-child(36) {
+  background-position-y: 54.6875%;
+}
+
+.image div:nth-child(37) {
+  background-position-y: 56.25%;
+}
+
+.image div:nth-child(38) {
+  background-position-y: 57.8125%;
+}
+
+.image div:nth-child(39) {
+  background-position-y: 59.375%;
+}
+
+.image div:nth-child(40) {
+  background-position-y: 60.9375%;
+}
+
+.image div:nth-child(41) {
+  background-position-y: 62.5%;
+}
+
+.image div:nth-child(42) {
+  background-position-y: 64.0625%;
+}
+
+.image div:nth-child(43) {
+  background-position-y: 65.625%;
+}
+
+.image div:nth-child(44) {
+  background-position-y: 67.1875%;
+}
+
+.image div:nth-child(45) {
+  background-position-y: 68.75%;
+}
+
+.image div:nth-child(46) {
+  background-position-y: 70.3125%;
+}
+
+.image div:nth-child(47) {
+  background-position-y: 71.875%;
+}
+
+.image div:nth-child(48) {
+  background-position-y: 73.4375%;
+}
+
+.image div:nth-child(49) {
+  background-position-y: 75%;
+}
+
+.image div:nth-child(50) {
+  background-position-y: 76.5625%;
+}
+
+.image div:nth-child(51) {
+  background-position-y: 78.125%;
+}
+
+.image div:nth-child(52) {
+  background-position-y: 79.6875%;
+}
+
+.image div:nth-child(53) {
+  background-position-y: 81.25%;
+}
+
+.image div:nth-child(54) {
+  background-position-y: 82.8125%;
+}
+
+.image div:nth-child(55) {
+  background-position-y: 84.375%;
+}
+
+.image div:nth-child(56) {
+  background-position-y: 85.9375%;
+}
+
+.image div:nth-child(57) {
+  background-position-y: 87.5%;
+}
+
+.image div:nth-child(58) {
+  background-position-y: 89.0625%;
+}
+
+.image div:nth-child(59) {
+  background-position-y: 90.625%;
+}
+
+.image div:nth-child(60) {
+  background-position-y: 92.1875%;
+}
+
+.image div:nth-child(61) {
+  background-position-y: 93.75%;
+}
+
+.image div:nth-child(62) {
+  background-position-y: 95.3125%;
+}
+
+.image div:nth-child(63) {
+  background-position-y: 96.875%;
+}
+
+.image div:nth-child(64) {
+  background-position-y: 98.4375%;
+}
+
+.image.animate-in div:nth-child(odd) {
+  -webkit-animation-name: in-left;
+          animation-name: in-left;
+}
+
+.image.animate-in div:nth-child(even) {
+  -webkit-animation-name: in-right;
+          animation-name: in-right;
+}
+
+.image.animate-out div:nth-child(odd) {
+  -webkit-animation-name: out-right;
+          animation-name: out-right;
+}
+
+.image.animate-out div:nth-child(even) {
+  -webkit-animation-name: out-left;
+          animation-name: out-left;
+}
+
+@-webkit-keyframes in-left {
+  0% {
+    background-position-x: 65%;
+  }
+  100% {
+    background-position-x: 50%;
+  }
+}
+
+@keyframes in-left {
+  0% {
+    background-position-x: 65%;
+  }
+  100% {
+    background-position-x: 50%;
+  }
+}
+
+@-webkit-keyframes in-right {
+  0% {
+    background-position-x: 35%;
+  }
+  100% {
+    background-position-x: 50%;
+  }
+}
+
+@keyframes in-right {
+  0% {
+    background-position-x: 35%;
+  }
+  100% {
+    background-position-x: 50%;
+  }
+}
+
+@-webkit-keyframes out-right {
+  0% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: 65%;
+  }
+}
+
+@keyframes out-right {
+  0% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: 65%;
+  }
+}
+
+@-webkit-keyframes out-left {
+  0% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: 35%;
+  }
+}
+
+@keyframes out-left {
+  0% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: 35%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

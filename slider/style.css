@@ -1,0 +1,97 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  max-width: 600px;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.container__img {
+  width: 100%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.container .next-btn {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .prev-btn {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.dots-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.dots-container .dot {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #111;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.dots-container .dot--active {
+  background-color: grey;
+}
+/*# sourceMappingURL=style.css.map */

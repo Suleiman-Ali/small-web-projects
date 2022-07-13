@@ -1,0 +1,56 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+svg {
+  margin: 5rem;
+  fill: none;
+  height: 100%;
+}
+
+.c-1 {
+  stroke: #ccc;
+  stroke-width: 10px;
+  stroke-dasharray: 630;
+}
+
+.c-2 {
+  stroke: orangered;
+  stroke-width: 5px;
+  stroke-dasharray: 630;
+  stroke-dashoffset: 630;
+  -webkit-transition: all 50ms;
+  transition: all 50ms;
+}
+
+.div {
+  position: relative !important;
+}
+
+.text {
+  position: absolute;
+  top: 17.5rem;
+  left: 17.5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+}
+/*# sourceMappingURL=style.css.map */

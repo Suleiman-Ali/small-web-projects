@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script defer src="main.js"></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="music-player">
+      <img
+        src="./austin-neill-hgO1wFPXl3I-unsplash.jpg"
+        alt="#"
+        class="music-player__img"
+      />
+      <h1 class="music-player__name">Sing for me</h1>
+      <p class="music-player__owner">Joe Hell</p>
+      <div class="music-player__time-line">
+        <div class="time">
+          <p class="time__text time__left">00:00</p>
+          <p class="time__text time__right">00:00</p>
+        </div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <audio
+        src="./[MP3DOWNLOAD.TO] Stray Kids _아니 (Any)_ Video-64k.mp3"
+        id="audio"
+      ></audio>
+      <div class="buttons">
+        <i class="fas fa-reply-all btn btn-replay"></i>
+        <i class="fas fa-play btn btn-play"></i>
+        <i class="fas fa-backward btn btn-backward"></i>
+        <i class="fas fa-forward btn btn-forward"></i>
+      </div>
+    </div>
+  </body>
+</html>

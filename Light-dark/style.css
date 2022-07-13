@@ -1,0 +1,37 @@
+:root {
+  --background-color: #fff;
+  --btn-back: orangered;
+  --text-color: #fff;
+}
+
+.dark {
+  --background-color: #333;
+  --btn-back: blue;
+  --text-color: #333;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  background-color: var(--btn-back);
+  color: var(--text-color);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

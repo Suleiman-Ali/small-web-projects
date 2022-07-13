@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>ABC HORIZON FORM</title>
+  </head>
+  <body>
+    <div class="block">
+      <h1 class="block__heading">Register Form</h1>
+      <form class="form">
+        <input
+          required
+          type="email"
+          name="email"
+          id=""
+          placeholder="E-mail"
+          class="form__input form__input--3"
+        />
+        <input
+          required
+          type="text"
+          name="first"
+          id=""
+          placeholder="First name"
+          class="form__input form__input--1"
+        />
+        <input
+          required
+          type="text"
+          name="last"
+          id=""
+          placeholder="Last name"
+          class="form__input form__input--2"
+        />
+        <input
+          required
+          type="text"
+          name="nationality"
+          id=""
+          placeholder="Nationality"
+          class="form__input form__input--3"
+        />
+        <div class="gender form__input--4">
+          <div class="left">
+            <label for="gender--1">Female</label>
+            <input
+              required
+              type="radio"
+              name="gender"
+              id="gender--1"
+              class="form__input--5"
+            />
+          </div>
+          <div class="right">
+            <label for="gender--2">Male</label>
+            <input
+              required
+              type="radio"
+              name="gender"
+              id="gender--2"
+              class="form__input--6"
+            />
+          </div>
+        </div>
+        <input type="submit" value="Register Now" class="btn" required />
+        <div class="input--last">
+          <input type="checkbox" name="terms" id="terms" required />
+          <label for="terms"
+            >I have read and agreed on <a href="#">TERM OF PRIVACY</a></label
+          >
+        </div>
+      </form>
+    </div>
+    <div class="overlay hidden">
+      <div class="msg">
+        <p>Thank's for Registering 😊</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
